@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  &__image {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: text-top;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 10px
+}

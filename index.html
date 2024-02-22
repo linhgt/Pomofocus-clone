@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro of Nguyenboy</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <header class="header">
+          <section class="logo">
+            <img src="./assets/ic_verified.png" class="logo__image" /><span
+              class="logo__text"
+              >Pomofocus</span
+            >
+          </section>
+
+          <section class="actions">
+            <header-button data-icon-src="./assets/ic_statistic.png">
+              <span slot="text">Reports</span>
+            </header-button>
+            <header-button data-icon-src="./assets/ic_cog.png">
+              <span slot="text">Setting</span>
+            </header-button>
+            <header-button data-icon-src="./assets/ic_user.png">
+              <span slot="text">Login</span>
+            </header-button>
+          </section>
+        </header>
+
+        <div class="divider"></div>
+
+        <main class="timer">
+          <section class="timer__box">
+            <div class="timer__mode">
+              <button id="PomodoroMode" class="timer__mode__btn">Pomodoro</button>
+              <button id="ShortBreak" class="timer__mode__btn">Short Break</button>
+              <button id="LongBreak" class="timer__mode__btn">Long Break</button>
+            </div>
+
+            <div id="Clock" class="timer__clock">
+              <div id="Minute"></div>
+              <div>:</div>
+              <div id="Second"></div>
+            </div>
+
+            <div class="timer__start">
+              <button id="StartBtn">Start</button>
+            </div>
+          </section>
+
+          <div class="timer__current-task">
+            <p class="task__number"></p>
+            <p class="task__description"></p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/script/main.js"></script>
+  </body>
+</html>
