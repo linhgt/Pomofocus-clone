@@ -10,23 +10,26 @@
     <div id="app">
       <div class="container">
         <header class="header">
-          <section class="logo">
+          <section class="header__logo">
             <img src="./assets/ic_verified.png" class="logo__image" /><span
               class="logo__text"
               >Pomofocus</span
             >
           </section>
 
-          <section class="actions">
-            <header-button data-icon-src="./assets/ic_statistic.png">
-              <span slot="text">Reports</span>
-            </header-button>
-            <header-button data-icon-src="./assets/ic_cog.png">
-              <span slot="text">Setting</span>
-            </header-button>
-            <header-button data-icon-src="./assets/ic_user.png">
-              <span slot="text">Login</span>
-            </header-button>
+          <section class="header__actions">
+            <button class="header__btn">
+              <img src="./assets/ic_statistic.png" class="btn__prefix"/>
+              <span>Report</span>
+            </button>
+            <button class="header__btn">
+              <img src="./assets/ic_cog.png" class="btn__prefix"/>
+              <span>Setting</span>
+            </button>
+            <button class="header__btn">
+              <img src="./assets/ic_user.png" class="btn__prefix"/>
+              <span>Login</span>
+            </button>
           </section>
         </header>
 
@@ -55,6 +58,19 @@
             <p class="task__number"></p>
             <p class="task__description"></p>
           </div>
+
+          <section class="timer__task">
+            <div class="task__current">
+              <P class="current__task-number"></P>
+              <P class="current__task-name"></P>
+            </div>
+
+            <div class="task__list">
+              <div class="list__header">
+                <h6>Tasks</h6>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>
